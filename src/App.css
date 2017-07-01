@@ -18,6 +18,39 @@
   font-size: large;
 }
 
+.Board {
+  padding-top: 20px;
+  width: 186px;
+  height: 186px;
+  margin: auto;
+}
+
+.Tile {
+  position: relative;
+  float: left;
+  margin-left: 1px;
+  margin-top: 1px;
+  width: 30px;
+  height: 30px;
+  outline: 1px solid;
+  user-select: none;
+}
+
+.Tile.UserInput:hover {
+  background-color: lightgrey;
+}
+
+.Tile.UserInput:active {
+  background-color: grey;
+}
+
+.Tile > p {
+  margin: 4px 0px 0px 0px;
+  font-size: 21px;
+  text-align: center;
+  font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
